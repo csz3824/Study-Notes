@@ -9,3 +9,14 @@
 #### 3) 命令git status来查看是否还有文件未提交。
 #### 4) 查看已经添加到暂存区但是没有提交的文件的修改 ：git diff readme.txt      
 ###     ３. git log查看git所有的提交记录
+
+
+
+## 二、远端仓库的基本操作：
+
+### 1.克隆远端分支:git clone git@github.com:csz3824/Study-Notes.git【可以用ssh方式或者https的方式】
+### 2.将文件放到版本库
+#### 1)使用上述git add、git commit将代码上传到本地仓库 
+#### 2) 用git push命令将代码push到远端分支。git push <远程主机名> <本地分支名>:<远程分支名>【e.g.   git push origin k1:master】
+### 3.将远端代码pull到本地。git pull <远程主机名> <远程分支名>:<本地分支名>【e.g.  git pull origin master:k1】
+### 4.本地分支跟踪远程分支，多分支的时候Git push和git pull都需要指定远程分支和本地分支的名字，如果绑定了远程分支和本地分支的话，可以直接Git push/git pull：git branch --set-upstream <本地分支名>   <远程主机名>/<远程分支名>:  【e.g.  git branch --set-upstream k1 origin/k1】  
