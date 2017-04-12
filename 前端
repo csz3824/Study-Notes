@@ -1,0 +1,7 @@
+今天前端一段逻辑，用了each，但是想跳过本次循环进入下个循环，编译器直接异常，查了一下原来是each中不支持break、continue。【mark it】
+
+jQuery、angularJs中each类似于javascript的for循环 
+但不同于for循环的是在each里面不能使用break结束循环，也不能使用continue来结束本次循环，想要实现类似的功能就只能用return,
+
+break         用return false
+continue      用return true
